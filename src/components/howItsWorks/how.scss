@@ -1,0 +1,137 @@
+.general {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    h1 {
+        margin: auto;
+        color: #514D4D;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 125%;
+        letter-spacing: -1.44px;
+
+        span {
+            color: #16AD32;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+        gap: 32px;
+        overflow: hidden;
+        padding-top: 30px;
+
+        .wrapper-box {
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            padding: 24px;
+            width: 260px;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            overflow: hidden;
+
+            h3 {
+                color: #514D4D;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 125%;
+                letter-spacing: -0.8px;
+            }
+
+            p {
+                color: #514D4D;
+                margin-top: -15px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 125%;
+                letter-spacing: -0.56px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        h1 {
+            font-size: 32px;
+        }
+
+        .wrapper {
+            gap: 24px;
+
+            .wrapper-box {
+                width: calc(50% - 12px);
+                height: auto;
+                min-height: 200px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        h1 {
+            font-size: 32px;
+        }
+
+        .wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 28px;
+        }
+
+        .wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+
+            .wrapper-box {
+                padding: 20px;
+                min-height: 200px;
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 24px;
+        }
+
+        .wrapper {
+            grid-template-columns: 1fr;
+            gap: 16px;
+
+            .wrapper-box {
+                padding: 16px;
+                min-height: 180px;
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

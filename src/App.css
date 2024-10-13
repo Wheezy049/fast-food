@@ -1,0 +1,87 @@
+
+.App {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #f0f0f0;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.cart-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.cart-button:hover {
+  background-color: #45a049;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+  }
+
+  .cart-button {
+    width: 100%;
+  }
+}
+
+/* Add these new animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.cart-popup, .checkout-popup {
+  animation: fadeIn 0.3s ease;
+}
+
+.cart-content, .checkout-content {
+  animation: slideIn 0.3s ease;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+

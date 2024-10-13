@@ -1,0 +1,127 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 50px;
+    width: 100%;
+
+    .box-1 {
+        max-width: 380px;
+        width: 100%;
+        min-height: 228px;
+        padding: 36px;
+        border-radius: 20px;
+        background: #161313;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h3 {
+            color: #FFF;
+            font-size: clamp(24px, 5vw, 40px);
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: -1.6px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #E4DBDB;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.45;
+            margin-bottom: 20px;
+        }
+
+        button {
+            border: none;
+            display: flex;
+            width: 156px;
+            align-items: center;
+            height: 56px;
+            padding: 12px;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 100px;
+            background: #16AD32;
+            color: #FFF;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.45;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken(#16AD32, 10%);
+            }
+
+            span {
+                display: flex;
+            }
+        }
+    }
+
+    .box-2 {
+        display: flex;
+        max-width: 540px;
+        background: #ECECEC;
+        width: 100%;
+        min-height: 280px;
+        padding: 36px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h1 {
+            color: #514D4D;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 125%;
+            letter-spacing: -1.28px;
+
+            span {
+                color: #16AD32;
+            }
+        }
+
+        .flex-1 {
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-between;
+        }
+
+        .flex-2 {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        p {
+            color: #514A4A;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 145%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        display: block;
+
+        .box-1 {
+            padding: 24px;
+
+            h3 {
+                font-size: 28px;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

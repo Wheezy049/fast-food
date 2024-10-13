@@ -1,0 +1,81 @@
+.landing-page {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 120vh; // Use min-height instead of height for flexibility
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center content horizontally
+
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; // Set a maximum width for larger screens
+    padding: 0 50px;
+    margin: 50px 0; // Add some vertical margin
+
+    h3 {
+      color: #514D4D;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 125%;
+      letter-spacing: -2.56px;
+      max-width: 50%; // Limit width to allow space for other content
+
+      span {
+        color: #16AD32;
+      }
+    }
+  }
+
+  .hero-2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+// Media queries for responsiveness
+@media (max-width: 1200px) {
+  .landing-page {
+
+    .hero,
+    .hero-2 {
+      max-width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    .hero {
+      flex-direction: column;
+      padding: 0 20px;
+
+      h3 {
+        font-size: 48px;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-page {
+    .hero {
+      h3 {
+        font-size: 36px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+    background-color: #fff;
+    width: 100%;
+
+    .foods-container {
+        max-width: 1200px;
+        margin: 10px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        flex-wrap: wrap;
+        gap: 32px;
+        overflow: hidden;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        color: #514D4D;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 125%;
+        letter-spacing: -1.44px;
+        padding-bottom: 10px;
+    }
+}

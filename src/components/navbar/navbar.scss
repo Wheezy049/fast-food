@@ -1,0 +1,148 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
+    .flex-6 {
+        display: flex;
+        gap: 10px;
+
+        button {
+            display: flex;
+            cursor: pointer;
+            padding: 18px 38px;
+            border: none;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            background: #FFF;
+            color: #514D4D;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 125%;
+            letter-spacing: -0.8px;
+        }
+    }
+
+    h1 {
+        font-weight: 700;
+
+        a {
+            text-decoration: none;
+            color: #514D4D;
+        }
+
+        span {
+            color: #16AD32;
+        }
+    }
+
+    .nav-button {
+        display: flex;
+        padding: 12px 24px;
+        align-items: center;
+        gap: 28px;
+        border-radius: 100px;
+        background: #FFF;
+
+        button {
+            display: flex;
+            padding: 18px 48px;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            border: none;
+            border-radius: 100px;
+            cursor: pointer;
+            background: #EEE;
+            color: #514D4D;
+            transition: all 0.3s ease;
+
+            &:hover,
+            &:active {
+                background-color: green;
+                color: #FFF;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+    }
+
+    .nav-cart {
+        display: flex;
+        padding: 18px 48px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 100px;
+        background: #FFF;
+        color: #514D4D;
+        cursor: pointer;
+    }
+}
+
+// Media queries for responsiveness
+@media (max-width: 1200px) {
+    .navbar {
+        max-width: 100%;
+        padding: 20px 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-button,
+        .nav-cart {
+            flex-grow: 1;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 18px;
+        padding: 20px 20px;
+
+        .nav-button,
+        .nav-cart {
+            padding: 12px 24px;
+        }
+
+        .nav-button button {
+            padding: 12px 24px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 16px;
+
+        .nav-button,
+        .nav-cart {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}

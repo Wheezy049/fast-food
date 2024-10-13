@@ -1,0 +1,20 @@
+.form-input {
+    display: flex;
+    width: 500px;
+    padding: 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 16px;
+    border: 1px solid #E0DDDD;
+    background: #FFF;
+    color: #C1BBBB;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.8px;
+    outline: none;
+
+    &:hover {
+        border-color: #16AD32;
+    }
+}
