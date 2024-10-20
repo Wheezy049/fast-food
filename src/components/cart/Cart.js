@@ -33,7 +33,7 @@ function Cart() {
                 <div>
                   <h1>{item.title}</h1>
                   <p>{item.text}</p>
-                  <p>{item.price}</p>
+                  <p>₦{item.price}</p>
                   <div className="flex-8">
                     <button
                       onClick={() => updateQuantity(item.id, item.quantity - 1)}

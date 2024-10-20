@@ -1,8 +1,10 @@
 .container {
     background-color: #fff;
     width: 100%;
+    position: relative;
 
     .foods-container {
+        position: relative;
         max-width: 1200px;
         margin: 10px auto;
         width: 100%;

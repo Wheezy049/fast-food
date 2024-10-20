@@ -1,7 +1,14 @@
 import React from "react";
 import "./hero.scss";
+import { useNavigate } from 'react-router-dom'
 
 function Hero() {
+  const navigate = useNavigate()
+
+  const createAccount = () =>{
+    navigate('/signup')
+  }
+
   return (
     <div className="hero-container">
       <div className="hero-box">
@@ -16,7 +23,7 @@ function Hero() {
           alt="Top Left Decoration"
           className="corner-image bottom-right"
         />
-        <button>Create account</button>
+        <button onClick={createAccount}>Create account</button>
       </div>
     </div>
   );

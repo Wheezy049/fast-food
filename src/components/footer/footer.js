@@ -1,7 +1,15 @@
 import React from "react";
 import "./footer.scss";
+import { useNavigate } from 'react-router-dom'
+
 
 function Footer() {
+
+  const navigate = useNavigate()
+
+  const getStarted = () =>{
+     navigate('/login')
+  }
   return (
     <div className="footer-container">
       <div className="box-1">
@@ -10,7 +18,7 @@ function Footer() {
           our food will arrive hot, ready to satisfy your cravings and make you
           feel at home.
         </p>
-        <button>
+        <button onClick={getStarted}>
           Get Started
           <span>
             <svg
@@ -38,7 +46,7 @@ function Footer() {
             <span>.</span>
             <p>Terms of Use</p>
           </div>
-          <p>© 2023 with naijachow</p>
+          <p>© 2023 with Fast<span>Food</span></p>
         </div>
       </div>
     </div>
