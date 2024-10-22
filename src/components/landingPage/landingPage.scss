@@ -57,13 +57,17 @@
   .landing-page {
     .hero {
       flex-direction: column;
-      padding: 0 20px;
+      // padding: 0 20px;
 
       h3 {
-        font-size: 48px;
+        font-size: 36px;
         max-width: 100%;
         text-align: center;
         margin-bottom: 30px;
+      }
+
+      img{
+        width: 400px;
       }
     }
   }
@@ -73,7 +77,7 @@
   .landing-page {
     .hero {
       h3 {
-        font-size: 36px;
+        font-size: 30px;
       }
     }
   }

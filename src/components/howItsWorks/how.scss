@@ -90,10 +90,11 @@
     @media (max-width: 768px) {
         h1 {
             font-size: 28px;
+            padding: 0 20px;
         }
 
         .wrapper {
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 20px;
 
             .wrapper-box {

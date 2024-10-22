@@ -64,3 +64,29 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+    .hero-container{
+
+        .hero-box{
+            display: flex;
+            margin: auto;
+            width: 400px;
+            height: 400px;
+
+            .corner-image{
+                max-width: 100px;
+            }
+
+            h1{
+                font-size: 20px;
+            }
+
+            button{
+                width: 160px;
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}

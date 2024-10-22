@@ -115,12 +115,19 @@
 @media (max-width: 480px) {
     .footer-container {
         display: block;
+        margin: auto;
 
-        .box-1 {
-            padding: 24px;
+        .box-1, .box-2 {
+            display: flex;
+            justify-content: center;
+            max-width: 370px;
+            max-height: 230px;
+            padding: 20px;
+            margin: auto;
+            margin-bottom: 15px;
 
             h3 {
-                font-size: 28px;
+                font-size: 20px;
             }
 
             button {

@@ -18,3 +18,9 @@
         border-color: #16AD32;
     }
 }
+
+@media (max-width: 768px) {
+    .form-input{
+        width: 100%;
+    }
+}
